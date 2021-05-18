@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        padding: 20px;
+        height: auto;
+        background-image: linear-gradient(
+            rgba(92, 91, 91, 0.5),
+            rgba(85, 81, 81, 0.5)
+          ),
+          url(/background.jpg);
+        /* background-image: url("/background.jpg"); */
+        background-size: 100%;
+        opacity: 0 - 1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        color: white;
+        padding: 4px;
+        text-align: center;
+        background: #333333;
+      }
+
+      .header h1 {
+        font-size: 50px;
+        margin: 4px;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: rgb(75, 75, 75);
+      }
+
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: rgb(0, 0, 0);
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 50%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 50%;
+        padding-left: 30px;
+      }
+
+      .midcolumn {
+        float: left;
+        width: 100%;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        width: 100%;
+        padding: 4px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: rgb(228, 226, 226);
+        padding: 20px;
+        margin-top: 30px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        color: white;
+        text-align: center;
+        background: #333333;
+        margin-top: 40px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        table {
+          font-size: 14px;
+        }
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        table {
+          font-size: 14px;
+        }
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        color: black;
+        font-family: monospace;
+        font-size: 24px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #333333;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+    <title>GCOC - Oven 1</title>
+    <meta name="description" content="Oven.  " />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index,follow" />
+    <link
+      rel="icon"
+      href="/forklift_truck_transport_warehouse_icon_148904.png"
+    />
+
+    <!--HEAD-->
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>GCOC DASHBOARD</h1>
+    </div>
+
+    <!--Navigation Bar-->
+    <div class="topnav">
+      <a href="/index.php">Home</a>
+      <a href="/site.html">Site Layout</a>
+    </div>
+
+    <!--5 Cards for oven updates.  -->
+    <div class="row">
+      <div class="midcolumn">
+        <div class="card">
+          <img class="fakeimg" height="800px" width="60px" src="gcocSiteMap.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h5>GCOC - Division of Green Charcoal SA Pty (Ltd) 2021</h5>
+    </div>
+  </body>
+</html>
